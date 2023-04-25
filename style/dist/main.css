@@ -1,0 +1,9 @@
+.header-logo {
+  font-size: 2rem;
+}
+.nav a {
+  display: grid;
+}
+.nav a i {
+  font-size: 25px;
+}
