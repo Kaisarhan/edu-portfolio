@@ -31,14 +31,14 @@
                         <i class="header-icon bi bi-speedometer2 d-block mx-auto mb-1"></i>
                         Dashboard
                     </a>
-                  </li>
+                  </li>-->
                   <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="header-icon bi bi-grid d-block mx-auto mb-1"></i>
+                    <a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="header-icon bi bi-search d-block mx-auto mb-1"></i>
                         Gred
                     </a>
                   </li>
-                  <li> -->
+                  <li> 
                     <a href="#" class="nav-link text-white">
                         <i class="header-icon bi bi-newspaper d-block mx-auto mb-1"></i>
                         News
@@ -57,18 +57,36 @@
     </header>
     <main>
 
-        <section class="py-5 text-center container">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-light">Portal Name</h1>
-              <p class="lead text-muted">тут описание вашего портала или какой-то Description</p>
-              <p>
-                <a href="#" class="btn btn-primary my-2">Найти преподователя</a>
-                <a href="#" class="btn btn-secondary my-2">отредактировать</a>
-              </p>
-            </div>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Portal Name</h1>
+            <p class="lead text-muted">тут описание вашего портала или какой-то Description</p>
+            <p>
+              <a href="#" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Найти преподователя</a>
+              <!-- <a href="#" class="btn btn-secondary my-2">отредактировать</a> -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Введите ИИН преподователя</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
       
         <div class="album py-5 bg-light">
           <div class="container">
